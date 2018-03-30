@@ -9,7 +9,6 @@ JMH benchmark for popular Java template engines:
 * [Rocker](https://github.com/fizzed/rocker)
 * [Thymeleaf](http://www.thymeleaf.org/)
 * [Trimou](http://trimou.org/)
-* [Velocity](http://velocity.apache.org/)
 
 Running the benchmark
 ======================
@@ -21,7 +20,7 @@ Running the benchmark
 Generating plot
 ===============
 1. Run benchmark while exporting results to csv with `java -jar target/benchmarks.jar -rff results.csv -rf csv`
-2. Use gnuplot to generate plot with `gnuplot benchmark.plot`. This will output `results.png`.
+2. Use gnuplot to generate plot with `gnuplot benchmark.plot`. This will output `results.svg`.
 
 Rules of Template Engine Configuration
 ======================================
@@ -39,4 +38,4 @@ Generally, the score represents the number of templates rendered per second; the
 Example Results
 ===============
 
-![Template Comparison](results.png)
+![Template Comparison](results.svg)
