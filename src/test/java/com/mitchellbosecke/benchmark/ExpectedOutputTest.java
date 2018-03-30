@@ -1,6 +1,6 @@
 package com.mitchellbosecke.benchmark;
 
-import static org.junit.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -46,13 +46,6 @@ public class ExpectedOutputTest {
         assertOutput(pebble.benchmark());
     }
 
-//    @Test
-//    public void testVelocityOutput() throws IOException {
-//        Velocity velocity = new Velocity();
-//        velocity.setup();
-//        assertOutput(velocity.benchmark());
-//    }
-
     @Test
     public void testMustacheOutput() throws IOException {
         Mustache mustache = new Mustache();
@@ -82,7 +75,7 @@ public class ExpectedOutputTest {
     }
 
     private void assertOutput(final String output) throws IOException {
-        assertEquals(readExpectedOutputResource(), output.replaceAll("\\s", ""));
+        assertThat(readExpectedOutputResource().equals(output.replaceAll("\\s", "")));
     }
 
     private String readExpectedOutputResource() throws IOException {
