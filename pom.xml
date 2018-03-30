@@ -11,7 +11,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jmh.version>1.11.2</jmh.version>
+		<jmh.version>1.20</jmh.version>
 		<uberjar.name>benchmarks</uberjar.name>
 
 		<pebble.version>2.2.0</pebble.version>
@@ -47,8 +47,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+                                       <compilerVersion>${javac.target}</compilerVersion>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
             <plugin>
@@ -135,11 +136,11 @@
 			<artifactId>freemarker</artifactId>
 			<version>${freemarker.version}</version>
 		</dependency>
-		<dependency>
+<!--		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
 			<version>${velocity.version}</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.thymeleaf</groupId>
 			<artifactId>thymeleaf</artifactId>
@@ -170,9 +171,9 @@
 
 	</dependencies>
 
-	<scm>
+<!--	<scm>
 		<connection>scm:git:git://github.com/mbosecke/template-benchmark.git</connection>
 		<developerConnection>scm:git:git@github.com:mbosecke/template-benchmark.git</developerConnection>
 		<url>http://github.com/mbosecke/template-benchmark</url>
-	</scm>
+	</scm>-->
 </project>
