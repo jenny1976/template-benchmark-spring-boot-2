@@ -11,8 +11,8 @@ set autoscale
 set datafile separator ','
 
 # Output
-set terminal pngcairo enhanced font "Verdana,9"
-set output 'results.png'
+set terminal svg enhanced font "Verdana,9"
+set output 'results.svg'
 set grid
 set key off
 set boxwidth 0.8 relative
