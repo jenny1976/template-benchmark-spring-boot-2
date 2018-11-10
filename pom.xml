@@ -32,8 +32,8 @@
                 <version>3.1</version>
                 <configuration>
                     <compilerVersion>${javac.target}</compilerVersion>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -48,7 +48,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <templateDirectory>src/main/resources</templateDirectory>
+                            <templateDirectory>src/main/resources/templates</templateDirectory>
                         </configuration>
                     </execution>
                 </executions>

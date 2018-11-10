@@ -1,5 +1,6 @@
 package com.jennykroete.benchmark;
 
+import com.fizzed.rocker.Rocker;
 import com.jennykroete.benchmark.model.Stock;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
@@ -14,7 +15,7 @@ import java.util.List;
  * 
  * @author joelauer
  */
-public class Rocker extends BaseBenchmark {
+public class RockerBenchmark extends BaseBenchmark {
 
     private List<Stock> items;
 
@@ -26,9 +27,7 @@ public class Rocker extends BaseBenchmark {
 
     @Benchmark
     public String benchmark() {
-        com.fizzed.rocker.Rocker rocker = new com.fizzed.rocker.Rocker();
-        return rocker.templates.stocks
-                .template(this.items)
+        return Rocker.template("stocks.rocker.html", items)
                 .render()
                 .toString();
     }

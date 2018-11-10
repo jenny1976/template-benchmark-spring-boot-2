@@ -34,9 +34,9 @@ public class ExpectedOutputTest {
 
     @Test
     public void testRockerOutput() throws IOException {
-        Rocker rocker = new Rocker();
-        rocker.setup();
-        assertOutput(rocker.benchmark());
+        RockerBenchmark rockerBenchmark = new RockerBenchmark();
+        rockerBenchmark.setup();
+        assertOutput(rockerBenchmark.benchmark());
     }
 
     @Test
