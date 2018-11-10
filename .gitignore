@@ -6,3 +6,5 @@ target/
 *.war
 *.ear
 .project
+/.idea/
+.idea/
