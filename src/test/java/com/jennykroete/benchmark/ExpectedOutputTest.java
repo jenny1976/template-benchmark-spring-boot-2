@@ -1,4 +1,4 @@
-package com.mitchellbosecke.benchmark;
+package com.jennykroete.benchmark;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -33,7 +33,7 @@ public class ExpectedOutputTest {
     }
 
     @Test
-    public void testRockerOutput() throws IOException, TemplateException {
+    public void testRockerOutput() throws IOException {
         Rocker rocker = new Rocker();
         rocker.setup();
         assertOutput(rocker.benchmark());

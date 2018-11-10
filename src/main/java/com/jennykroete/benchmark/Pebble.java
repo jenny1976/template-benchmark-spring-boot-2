@@ -1,4 +1,4 @@
-package com.mitchellbosecke.benchmark;
+package com.jennykroete.benchmark;
 
 import com.mitchellbosecke.pebble.PebbleEngine;
 import com.mitchellbosecke.pebble.error.PebbleException;

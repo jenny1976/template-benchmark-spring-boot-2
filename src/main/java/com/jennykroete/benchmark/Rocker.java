@@ -1,7 +1,6 @@
-package com.mitchellbosecke.benchmark;
+package com.jennykroete.benchmark;
 
-import com.mitchellbosecke.benchmark.model.Stock;
-import freemarker.template.TemplateException;
+import com.jennykroete.benchmark.model.Stock;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 
@@ -26,8 +25,9 @@ public class Rocker extends BaseBenchmark {
     }
 
     @Benchmark
-    public String benchmark() throws TemplateException, IOException {
-        return templates.stocks
+    public String benchmark() {
+        com.fizzed.rocker.Rocker rocker = new com.fizzed.rocker.Rocker();
+        return rocker.templates.stocks
                 .template(this.items)
                 .render()
                 .toString();

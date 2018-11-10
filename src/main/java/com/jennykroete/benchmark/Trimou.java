@@ -1,4 +1,4 @@
-package com.mitchellbosecke.benchmark;
+package com.jennykroete.benchmark;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package com.mitchellbosecke.benchmark;
+package com.jennykroete.benchmark;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -14,7 +14,7 @@ import org.openjdk.jmh.annotations.Setup;
 import com.github.mustachejava.DefaultMustacheFactory;
 import com.github.mustachejava.MustacheException;
 import com.github.mustachejava.MustacheFactory;
-import com.mitchellbosecke.benchmark.model.Stock;
+import com.jennykroete.benchmark.model.Stock;
 
 public class Mustache extends BaseBenchmark {
 

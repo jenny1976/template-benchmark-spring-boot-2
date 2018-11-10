@@ -1,7 +1,8 @@
-package com.mitchellbosecke.benchmark;
+package com.jennykroete.benchmark;
 
 import java.io.IOException;
 
+import com.jennykroete.benchmark.model.Stock;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 
@@ -10,7 +11,6 @@ import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;
 import com.github.jknack.handlebars.Template;
 import com.github.jknack.handlebars.io.ClassPathTemplateLoader;
-import com.mitchellbosecke.benchmark.model.Stock;
 
 public class Handlebars extends BaseBenchmark {
 
